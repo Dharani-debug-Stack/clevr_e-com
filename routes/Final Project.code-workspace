@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Final Project",
+			"path": "../.."
+		},
+		{
+			"name": "frontend",
+			"path": "../../../admin panel/frontend"
+		}
+	],
+	"settings": {}
+}
