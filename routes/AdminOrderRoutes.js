@@ -4,9 +4,9 @@ import Order from "../models/Order.js";
 
 const router = express.Router();
 
-// ----------------------------
+
 // Fetch all orders (admin)
-// ----------------------------
+
 router.get("/", async (req, res) => {
   try {
     const orders = await Order.find().sort({ createdAt: -1 });
@@ -16,9 +16,9 @@ router.get("/", async (req, res) => {
   }
 });
 
-// ----------------------------
+
 // Update payment status
-// ----------------------------
+
 router.patch("/update-status/:id", async (req, res) => {
   try {
     const { status } = req.body;

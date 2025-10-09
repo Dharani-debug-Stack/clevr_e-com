@@ -3,7 +3,7 @@ import Favorite from '../models/Favorite.js';
 
 const router = express.Router();
 
-// ------------------------ GET favorites for a user ------------------------
+//  GET favorites for a user 
 router.get('/:userId', async (req, res) => {
   try {
     const favorites = await Favorite.find({ userId: req.params.userId }).populate('productId');
@@ -14,7 +14,7 @@ router.get('/:userId', async (req, res) => {
   }
 });
 
-// ------------------------ POST add to favorites ------------------------
+// POST add to favorites 
 router.post('/', async (req, res) => {
   try {
     const { userId, productId } = req.body;
@@ -32,7 +32,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// ------------------------ DELETE favorite ------------------------
+//  DELETE favorite
 router.delete('/:id', async (req, res) => {
   try {
     await Favorite.findByIdAndDelete(req.params.id);
