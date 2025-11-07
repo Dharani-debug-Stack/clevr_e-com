@@ -9,6 +9,7 @@ import paymentRoutes from'./routes/paymentRoutes.js'
 import testimonialRoutes from './routes/Testimonials.js';
 import orderRoutes from "./routes/orderRoutes.js";
 import adminOrderRoutes from "./routes/AdminOrderRoutes.js";
+import chatRoutes from "./routes/ChatRoute.js";
 import dotenv from "dotenv";
 dotenv.config();
 
