@@ -35,6 +35,7 @@ app.use("/api/payment", paymentRoutes);
 app.use("/api/testimonials", testimonialRoutes);
 app.use("/api/payment/orders", orderRoutes);
 app.use("/api/admin/orders", adminOrderRoutes);
+app.use("/api/chat", chatRoutes);
 
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
